@@ -6,62 +6,14 @@
     { "type": "board-xiao-esp32-s3", "id": "esp", "top": 10.17, "left": 23.38, "attrs": {} },
     { "type": "board-epaper-2in9", "id": "epd1", "top": -9, "left": 292.08, "attrs": {} },
     { "type": "wokwi-microsd-card", "id": "sd1", "top": 19.43, "left": -182.33, "attrs": {} },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_pu1",
-      "top": 163.95,
-      "left": -96,
-      "attrs": { "value": "10000" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_right",
-      "top": 203.95,
-      "left": -96,
-      "attrs": { "value": "0" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_left",
-      "top": 243.95,
-      "left": -96,
-      "attrs": { "value": "3300" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_confirm",
-      "top": 283.95,
-      "left": -96,
-      "attrs": { "value": "1000" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_back",
-      "top": 323.95,
-      "left": -96,
-      "attrs": { "value": "270" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_pu2",
-      "top": 383.95,
-      "left": -96,
-      "attrs": { "value": "10000" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_voldown",
-      "top": 423.95,
-      "left": -96,
-      "attrs": { "value": "0" }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_volup",
-      "top": 463.95,
-      "left": -96,
-      "attrs": { "value": "1500" }
-    },
+    { "type": "wokwi-resistor", "id": "r_pu1",     "top": 163.95, "left": -96, "attrs": { "value": "10000" } },
+    { "type": "wokwi-resistor", "id": "r_right",   "top": 203.95, "left": -96, "attrs": { "value": "1000" } },
+    { "type": "wokwi-resistor", "id": "r_left",    "top": 243.95, "left": -96, "attrs": { "value": "5600" } },
+    { "type": "wokwi-resistor", "id": "r_confirm", "top": 283.95, "left": -96, "attrs": { "value": "17000" } },
+    { "type": "wokwi-resistor", "id": "r_back",    "top": 323.95, "left": -96, "attrs": { "value": "68000" } },
+    { "type": "wokwi-resistor", "id": "r_pu2",     "top": 383.95, "left": -96, "attrs": { "value": "10000" } },
+    { "type": "wokwi-resistor", "id": "r_voldown", "top": 423.95, "left": -96, "attrs": { "value": "1600" } },
+    { "type": "wokwi-resistor", "id": "r_volup",   "top": 463.95, "left": -96, "attrs": { "value": "18000" } },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_back",
@@ -138,12 +90,7 @@
     [ "esp:3V3", "r_pu1:1", "red", [ "h48.62", "v105.6", "h-249.6", "v16" ] ],
     [ "r_pu1:2", "esp:D0", "purple", [ "h8.4", "v-16", "v-124.8" ] ],
     [ "r_pu1:2", "r_right:1", "purple", [ "h8.4", "v22.4", "h-76.8", "v17.6" ] ],
-    [
-      "r_right:2",
-      "btn_right:1.l",
-      "purple",
-      [ "h488.4", "v11.2", "h153.6", "v172.8", "h-19.2", "v19.2" ]
-    ],
+    [ "r_right:2", "btn_right:1.l", "purple", [ "h488.4", "v11.2", "h153.6", "v172.8", "h-19.2", "v19.2" ] ],
     [ "r_right:2", "r_left:1", "purple", [ "h8.4", "v20.8", "h-76.8", "v19.2" ] ],
     [ "r_left:2", "btn_left:1.l", "purple", [ "h488.4", "v163.2" ] ],
     [ "r_left:2", "r_confirm:1", "purple", [ "h8.4", "v19.2", "h-76.8", "v20.8" ] ],
@@ -155,12 +102,7 @@
     [ "r_pu2:2", "r_voldown:1", "purple", [ "h8.4", "v23.2", "h-76.8", "v16.8" ] ],
     [ "r_voldown:2", "btn_voldown:1.l", "purple", [ "h478.8", "v40.8" ] ],
     [ "r_voldown:2", "r_volup:1", "purple", [ "h8.4", "v21.6", "h-76.8", "v18.4" ] ],
-    [
-      "r_volup:2",
-      "btn_volup:1.l",
-      "purple",
-      [ "h8.4", "v-8.8", "h566.4", "v-57.6", "h-19.2", "v-48" ]
-    ]
+    [ "r_volup:2", "btn_volup:1.l", "purple", [ "h8.4", "v-8.8", "h566.4", "v-57.6", "h-19.2", "v-48" ] ]
   ],
   "dependencies": {}
 }
